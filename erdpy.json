@@ -1,0 +1,33 @@
+{
+  "configurations": {
+    "default": {
+      "proxy": "https://gateway.elrond.com"
+    }
+  },
+  "contract": {
+    "deploy": {
+      "chain": "1",
+      "verbose": true,
+      "metadata-payable": true,
+      "bytecode": "output/smart-contract.wasm",
+      "recall-nonce": true,
+      "pem": "./wallet/wallet.pem",
+      "gas-limit": 99999999,
+      "arguments": [2000000],
+      "send": true,
+      "outfile": "deploy.interaction.json"
+    },
+    "upgrade": {
+      "chain": "1",
+      "verbose": true,
+      "metadata-payable": true,
+      "bytecode": "output/smart-contract.wasm",
+      "recall-nonce": true,
+      "pem": "./wallet/wallet.pem",
+      "gas-limit": 99999999,
+      "arguments": [2000000],
+      "send": true,
+      "outfile": "deploy.interaction.json"
+    }
+  }
+}

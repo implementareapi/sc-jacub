@@ -1,0 +1,11 @@
+[package]
+name = "smart-contract-meta"
+version = "0.0.1"
+authors = [ "nuwa <nuwa@yannis.codes>" ]
+edition = "2018"
+publish = false
+
+[dependencies]
+smart-contract = { path = ".." }
+elrond-wasm = "0.27.4"
+elrond-wasm-debug = "0.27.4"
